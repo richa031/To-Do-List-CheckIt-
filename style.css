@@ -1,0 +1,126 @@
+          body{
+              background-color: #edf0f1;
+          }
+          #head{
+              padding: 20px;
+              background-color: blueviolet;
+              margin-top: 10px;
+              border-bottom-left-radius: 15px;
+              border-bottom-right-radius: 15px;
+             
+          }
+          #add{
+              border-radius: 50%;
+              height: 50px;
+              width: 50px;
+              position: absolute;
+              z-index: 2;
+              right: -2px;
+              color: blueviolet;
+              background-color: white; 
+              border: none;
+              cursor: pointer;
+          }
+          #item{
+              border-top-left-radius: 5px;
+              border-top-right-radius: 25px;
+              border-bottom-left-radius: 5px;
+              border-bottom-right-radius: 25px;
+              height: 50px;
+              background-color: #CFADFD;
+              border: none;
+             
+          }
+
+.container{
+    width: 100%;
+    float: left;
+    padding: 15px;
+}
+ul.todo{
+    width: 100%;
+    float: left;
+    list-style-type: none;
+}
+
+ul.todo li{
+    width: 100%;
+    min-height: 50px;
+    float: left;
+    font-size: 20px;
+    font-weight: 500;
+    color: #444;
+    line-height: 22px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px rgba(44,62,80,0,0.10);
+    margin: 0 0 10px 0;
+    position: relative;
+    padding: 14px 100px 14px 14px;;
+}
+
+ul.todo li:last-of-type{
+    margin: 0;
+}
+
+ul.todo li .button{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 100px;
+}
+
+ul.todo li .button button{
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: none;
+    border: none;
+}
+
+ul.todo li .button button:last-of-type:before{
+    content: '';
+    width: 1px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: #edf0f1;
+}
+
+ul.todo li .button .remove:hover{
+    background: #CFADFD;
+}
+
+ul.todo li .button .complete:hover{
+    background: #CFADFD;
+}
+
+ul.todo#completed:not(:empty){
+    position: relative;
+    padding: 60px 0 0 0;
+}
+
+ul.todo#completed:not(:empty):before {
+  
+    content: '';
+    width: 150px;
+    height: 1px;
+    background: #d3e5e0;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin: 0 0 0 -75px;
+}
+
+
+
+
+
+
+
+
+
+
