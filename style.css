@@ -29,6 +29,8 @@
               height: 50px;
               background-color: #CFADFD;
               border: none;
+              width: 100%;
+              float: left;
              
           }
 
